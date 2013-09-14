@@ -4,3 +4,17 @@
 *.jar
 *.war
 *.ear
+
+# Maven build folder
+target/
+
+# Eclipse/STS files
+.settings/
+bin/
+*.DS_Store
+*.class
+*.prefs
+*.project
+*.classpath
+*.springBeans
+
