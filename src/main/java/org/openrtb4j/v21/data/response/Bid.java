@@ -52,7 +52,7 @@ public class Bid {
      * 
      * Required.
      */
-    private Float price;
+    private Double price;
 
     /**
      * ID that references the ad to be served if the bid wins.
@@ -105,7 +105,7 @@ public class Bid {
      * the parties in an OpenRTB transaction to support flexibility beyond the
      * standard defined in this specification.
      */
-    private String ext = null;
+    private Object ext = null;
 
     /**
      * @return the id
@@ -138,14 +138,14 @@ public class Bid {
     /**
      * @return the price
      */
-    public Float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
     /**
      * @param price the price to set
      */
-    public void setPrice(Float price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -264,14 +264,14 @@ public class Bid {
     /**
      * @return the ext
      */
-    public String getExt() {
+    public Object getExt() {
         return ext;
     }
 
     /**
      * @param ext the ext to set
      */
-    public void setExt(String ext) {
+    public void setExt(Object ext) {
         this.ext = ext;
     }
 
