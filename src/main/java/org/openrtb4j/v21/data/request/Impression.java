@@ -73,7 +73,7 @@ public class Impression {
     /**
      * Bid floor for this impression (in CPM of bidfloorcur).
      */
-    private float bidfloor = 0;
+    private Double bidfloor = 0D;
 
     /**
      * If bid floor is specified and multiple currencies supported per bid
@@ -93,7 +93,7 @@ public class Impression {
      * the parties in an OpenRTB transaction to support flexibility beyond the
      * standard defined in this specification.
      */
-    private String ext;
+    private Object ext;
 
     /**
      * @return the id
@@ -196,14 +196,14 @@ public class Impression {
     /**
      * @return the bidfloor
      */
-    public float getBidfloor() {
+    public double getBidfloor() {
         return bidfloor;
     }
 
     /**
      * @param bidfloor the bidfloor to set
      */
-    public void setBidfloor(float bidfloor) {
+    public void setBidfloor(double bidfloor) {
         this.bidfloor = bidfloor;
     }
 
@@ -238,14 +238,14 @@ public class Impression {
     /**
      * @return the ext
      */
-    public String getExt() {
+    public Object getExt() {
         return ext;
     }
 
     /**
      * @param ext the ext to set
      */
-    public void setExt(String ext) {
+    public void setExt(Object ext) {
         this.ext = ext;
     }
 

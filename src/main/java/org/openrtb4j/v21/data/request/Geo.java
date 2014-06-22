@@ -78,7 +78,7 @@ public class Geo {
      * the parties in an OpenRTB transaction to support flexibility beyond the
      * standard defined in this specification.
      */
-    private String ext = null;
+    private Object ext = null;
 
     /**
      * @return the lat
@@ -209,14 +209,14 @@ public class Geo {
     /**
      * @return the ext
      */
-    public String getExt() {
+    public Object getExt() {
         return ext;
     }
 
     /**
      * @param ext the ext to set
      */
-    public void setExt(String ext) {
+    public void setExt(Object ext) {
         this.ext = ext;
     }
 

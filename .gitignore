@@ -18,3 +18,7 @@ bin/
 *.classpath
 *.springBeans
 
+# Intellij
+.idea/
+*.iml
+

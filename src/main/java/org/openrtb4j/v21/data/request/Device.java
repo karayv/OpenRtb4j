@@ -156,7 +156,7 @@ public class Device {
      * the parties in an OpenRTB transaction to support flexibility beyond the
      * standard defined in this specification.
      */
-    private String ext = null;
+    private Object ext = null;
 
     /**
      * @return the dnt
@@ -427,14 +427,14 @@ public class Device {
     /**
      * @return the ext
      */
-    public String getExt() {
+    public Object getExt() {
         return ext;
     }
 
     /**
      * @param ext the ext to set
      */
-    public void setExt(String ext) {
+    public void setExt(Object ext) {
         this.ext = ext;
     }
 
